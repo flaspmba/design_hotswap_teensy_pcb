@@ -1,12 +1,9 @@
-## Welcome to GitHub Pages
+## Table of Contents
+1. [Creating the Layout](#creating_the_layout)
 
-You can use the [editor on GitHub](https://github.com/flaspmba/keyboard_pcb_design_walkthrough/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+### Creating the Layout <a name="creating_the_layout"></a>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Using [Keyboard Layout Editor](http://www.keyboard-layout-editor.com/), I designed the layout for my keyboard.
 
 ```markdown
 Syntax highlighted code block
