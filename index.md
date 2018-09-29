@@ -1,8 +1,10 @@
-## Table of Contents
-1. [Creating the Layout](#creating_the_layout)
-2. [Creating the Matrix](#creating_the_matrix)
+# WORK IN PROGRESS
 
-### Creating the Layout <a name="creating_the_layout"></a>
+## Table of Contents
+1. [The Layout](#the_layout)
+2. [The Matrix](#the_matrix)
+
+### The Layout <a name="the_layout"></a>
 I used [Keyboard Layout Editor](http://www.keyboard-layout-editor.com/) to design layout for my keyboard.
 
 ![keyboard_layout](/images/keyboard_layout_example.png)
@@ -20,8 +22,19 @@ After finishing my layout, I copied the JSON:
 [{w:2.25},"Shift","Z","X","C","V","B","N","M","<\n,",">\n.","?\n/",{w:2.75},"Shift"],
 [{x:1.75,w:1.25},"Win",{w:1.25},"Alt",{a:7,w:6.25},"",{a:4,w:1.25},"Alt",{w:1.25},"Win"]
 ```
-### Creating the Matrix <a name="creating_the_matrix"></a>
-I used [KBfirmware] to create a matrix for me.
+### The Matrix <a name="the_matrix"></a>
+Pasting the JSON I copied above, I used [KBfirmware](https://kbfirmware.com/) to create a matrix for me. I'll use this matrix to create the wiring schematic in KiCad.
+
+![kbfirmware_JSON](/images/kbfirmware_paste_JSON.png)
+
+![wiring_matrix](/images/matrix_wiring_example.png)
+
+I need to determine if the sum of columns and rows of my matrix will fit the maximum number of pinouts for the Teensy2.0.
+- If it doesn't, then I would have to get creative with my matrix. I have to remember that the matrix is a virtual representation of the keys that doesn't care how they are physically laid out. I typically just create the matrix in [Keyboard Layout Editor](http://www.keyboard-layout-editor.com/) with 1u keys, just to import to [KBfirmware](https://kbfirmware.com/) to layout a matrix for me.
+- Thankfully, (15) columns + (5) rows = (20) pinouts, which fits a Teensy2.0, since I'm not planning on anything fancy like LEDs.
+
+I'll be sure to take a screenshot of the matrix so that I have it handy for the schematic portion of KiCad. I'll be back on [KBfirmware](https://kbfirmware.com/) when I'm ready to create the firmware.
+
+### 
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
