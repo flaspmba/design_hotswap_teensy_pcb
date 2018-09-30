@@ -3,6 +3,7 @@
 ## Table of Contents
 1. [The Layout](#the_layout)
 2. [The Matrix](#the_matrix)
+3. [The Schematic](#the_schematic)
 
 ### The Layout <a name="the_layout"></a>
 I used [Keyboard Layout Editor](http://www.keyboard-layout-editor.com/) to design layout for my keyboard.
@@ -35,6 +36,10 @@ I need to determine if the sum of columns and rows of my matrix will fit the max
 
 I'll be sure to take a screenshot of the matrix so that I have it handy for the schematic portion of KiCad. I'll be back on [KBfirmware](https://kbfirmware.com/) when I'm ready to create the firmware.
 
-### 
+### The Schematic <a name="the_schematic"></a>
+From this point forward, I basically follow [/u/ruiqimao's Keyboard PCB Guide,](https://github.com/ruiqimao/keyboard-pcb-guide) but with some tweaks to fit my design. The approach I'm taking is essentially taking what I would do if I handwired this board and making it into a PCB.
+
+1. First, I follow the guide's recommendation to download Hasu's component library.
+
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
