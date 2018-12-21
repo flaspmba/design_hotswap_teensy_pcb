@@ -31,13 +31,13 @@ Pasting the JSON I copied above, I used [KBfirmware](https://kbfirmware.com/) to
 ![wiring_matrix](/images/matrix_wiring_example.png)
 
 I need to determine if the sum of columns and rows of my matrix will fit the maximum number of pinouts for the Teensy2.0.
-- If it doesn't, then I would have to get creative with my matrix. I have to remember that the matrix is a virtual representation of the keys that doesn't care how they are physically laid out. I typically just create the matrix in [Keyboard Layout Editor](http://www.keyboard-layout-editor.com/) with 1u keys, just to import to [KBfirmware](https://kbfirmware.com/) to layout a matrix for me.
+- If it doesn't, then I would have to get creative with my matrix. I have to remember that the matrix is a virtual representation of the keys that doesn't care how they are physically laid out. For a custom matrix, I just put together a layout in [Keyboard Layout Editor](http://www.keyboard-layout-editor.com/) with 1u keys, just to import to [KBfirmware](https://kbfirmware.com/) to do the heavy lifting in creating a matrix for me.
 - Thankfully, (15) columns + (5) rows = (20) pinouts, which fits a Teensy2.0, since I'm not planning on anything fancy like LEDs.
 
-I'll be sure to take a screenshot of the matrix so that I have it handy for the schematic portion of KiCad. I'll be back on [KBfirmware](https://kbfirmware.com/) when I'm ready to create the firmware.
+I'll be sure to take a screenshot of this matrix so that I have it handy for the schematic portion of KiCad. I'll be back on [KBfirmware](https://kbfirmware.com/) when I'm ready to create the firmware.
 
 ### The Schematic <a name="the_schematic"></a>
-From this point forward, I basically follow [/u/ruiqimao's Keyboard PCB Guide,](https://github.com/ruiqimao/keyboard-pcb-guide) but with some tweaks to fit my design. My approach is to convert my handwire into a piece of FR-4. The schematic portion allows me to plan how I am going to connect the matrix with the Teensy2.0.
+From this point forward, I basically follow [/u/ruiqimao's Keyboard PCB Guide,](https://github.com/ruiqimao/keyboard-pcb-guide) but with some tweaks to fit my design. What I'm trying to achieve is turning my handwire into a piece of FR-4. The schematic portion allows me to plan how I am going to connect the matrix with the Teensy2.0.
 
 1. First, I follow the guide's recommendation to download [Hasu's component library.](https://github.com/tmk/kicad_lib_tmk)
 
